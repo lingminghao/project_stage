@@ -1,0 +1,28 @@
+/* 清除浏览器默认样式 */
+*{
+    margin: 0;padding: 0;
+}
+/* 清除b、strong标签的默认加粗样式 */
+b,strong{
+    font-weight: normal;
+}
+/* 清除i、em标签的默认倾斜样式 */
+i,em{
+    font-style:normal
+}
+/* 清除a、u下划线 */
+a,u{
+    text-decoration: none
+}
+/* 清除列表的默认符号样式 */
+ol,ul,li{
+    list-style: none
+}
+.clear-fix::after{
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}

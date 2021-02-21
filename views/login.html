@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中关村用户登入</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/login.css">
+    <link rel="stylesheet" href="../style/iconfont.css">
+
+</head>
+<body>
+    <div class="warp">
+        <div class="header"></div>
+        <div class="top">
+            <div class="top_conttent">
+                <img src="../image/header_logo.png">
+                <p>欢迎登录</p>
+            </div>
+        </div>
+        <div class="login_content">
+            <div class="content">
+                <div class="loging">
+                   <div class="ltop">
+                        <p>会员登录</p>
+                        <p><a href="#">没有账号？</a><a href="#">立即注册</a></p>
+                   </div> 
+                   <div class="txt">
+                       <form class="wrap" action="./index.html">
+                        <input type="text" class="phnoenumber" placeholder="请输入手机号">
+                        <input type="password" class="pw" placeholder="密码">
+                        <input type="submit" class="sub">登录</input>
+                        <p>忘记密码</p>
+                    </form>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="login_botton">
+            <div class="computer">
+               <div class="bf">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAOESURBVHjatJbNSytnFMZ/M0loBBMlH5pQTLEJxtRrEAQXceXKjVS6aW9Kt822i1LsP3Bp7+K2dBm468K9i6zc+HmrYAwKmoC68SO3QQuOkYmjRkkymW4m6ThOdNUDs5h3nvOcd868z3lGSKfTPBEh4FtgCvgC8AN14BT4G/gLeAcUOxHYnyD+FfgasJmefQIM69c08Eov8jNQMhOJxptUKgXwJbAHJC3IrULUsftAUudoh2Bq0Q/Ab+bCbSZRpNlsPlVMA34Efrdq0Tf6A8GY4XK5iMfjhEIhXC4XmqYhyzLHx8fs7+9Tq9UebBh4A/yjt61dIAS8NZMPDQ0xOTlJsVhkbW2NSqWCKIr4/X5GRkaIxWIsLi5SLpfNRd4Cm0CpVeAXoNuIGhwcJJFIsLCwgMPhIBaL0dvbi6qqlMtlcrkcwWCQmZkZMpkMiqIY07uB10BSSKfTnwEnxr47HA6SySSbm5uEw2FCodDjZmsahUIBQRDw+/3Mz8+bIU3gcxF4af6o0WgUWZaJRCKW5ACCIDA2NoamaXg8Hrxer9XpeinqIvrv3bq7iUajAAwMDHQ8LpIkATA6OoqiKExNTREIBMywKRF4YVxJJBJ4vV6CwWBH8vPzc1ZXV1FVFZvNRl9fHx6Ph/HxcTP0hR3wGVecTqclqaqqXF5eIkkShUKB29tbisUikUikjbHZHunSb39OpkdHR+TzeSqVyiORnZ6ePijQaRaVgU9bC/f39w8A6+vrNBoNy+Tr62sAGo0Gdrudq6srM+RC1GdIO7LZLNvb22SzWQC6uro67k4QBFRVJZPJIMsyGxsbZsieCKwaV25ubtjd3WVvb49SqcTw8DAAPp8Pr9dLf38/8XgcgEAgwM7ODk6nk7OzM6s3/SDqM8Nygq2srNDT04PH40FRFMLhMJFIhJOTE9xuN/V6nYODAyYmJsjn81ZCe2cHPgLvdcE9iHq9zvLyMm63m1qtRqFQoFaroWkaNpuNi4sLpqenyeVyVKtVc/p74GPrFM0BM+Z51ApFUfD7/czOziJJEpIk4fP5kGWZpaUl7u7uzCk3Omd7mpaA74E/zRPVqINms0m1WuXw8JCtra1O3qDpXKX/y3B+0j3B0jL/AL4Crq2ynyG/Ab5LpVJvnrJMo+m/1k1ffEbsTf2DzlmZfqdRUdKNfM7w2zIC9LWGqS7QDzr5Safq/w4A/vNPZodM9b4AAAAASUVORK5CYII=">  
+                    <p>热线电话</p>
+                    <p>400-688-1999</p>   
+                </div>
+                <div class="tow">©2021 北京知行锐景科技有限公司 / 北京中在云商科技有限公司  版权备案单位/子公司</div>
+                <div class="last">
+                    <p>京ICP证150096号</p>
+                    <a>京ICP备14061128号</a>
+                    <a>京公网安备11010802020026号</a>
+                    <a>网络文化经营许可证京网文[2016]1631-199</a>
+                    <a>增值电信业务经营许可证：京B2-20200543</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/jquery-1.8.3.js" charset="utf-8"></script>
+    <script src="./script/login.js" charset="utf-8"></script>
+    <script src="./script/utils.js" charset="utf-8"></script>
+    <script>
+        (function(){
+    if (getCookie('user')) {
+      $('.phnoenumber').val(getCookie('user'))
+       $('.pw').val(getCookie('pass'))
+    } else {
+      user.value = ''
+      pass.value = ''
+    }
+})();
+    </script>
+</body>
+</html>

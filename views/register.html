@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中关村注册</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/register.css">
+    <link rel="stylesheet" href="../style/register.css">
+</head>
+<body>
+    <div class="warp">
+        <div class="header"></div>
+
+        <div class="reg_top">
+           <div class="top">
+            <img src="../image/header_logo.png">
+            <p>欢迎注册</p>
+           </div>   
+        </div>
+
+        <div class="post">  
+            <div class="account">
+                <div class="enter">
+                    <p class="stone">1. 填写账户信息</p>
+                    <p class="sttow">2. 填写公司信息</p>
+                </div>
+                <form>
+                    <div class="account-con">
+                        <div class="account-name">
+                            <p>注册类型：</p>
+                            <span class="hidden">个人注册</span>
+                            <span class="show">企业注册</span>
+                        </div>
+                        <div class="account-phone">
+                            <p>手机号码：</p>
+                            <input type="text" class="phone" placeholder="请输入手机号">
+                            <p class="reginfo phoneshow"><span>!</span>手机号不正确</p>
+                        </div>
+                        <div class="account-note">
+                            <p>短信验证：</p>
+                            <input type="text" class="note" placeholder="请输入短信验证">
+                            <span class="notebut">获取验证码</span>
+                            <p class="reginfo noteshow"><span>!</span>验证错误</p>
+                        </div>
+                        <div class="account-phone">
+                            <p>登录密码：</p>
+                            <input type="password" class="passone" placeholder="请输入密码">
+                            <p class="reginfo passwoldshow"><span>!</span>密码不一致</p>
+                        </div>
+                        <div class="account-phone">
+                            <p>确认密码：</p>
+                            <input type="password" class="passtow" placeholder="请再次输入密码">
+                            <p class="reginfo passwoldshow" ><span>!</span>密码不一致</p>
+                        </div>
+                        <div class="commit">提交</div>
+                        <div class="have">已有账号登录</div>
+                    </div>
+                </form>
+            </div>   
+        </div>
+
+        <div class="foot"></div>
+    </div>
+    <script src="./script/jquery-1.8.3.js" charset="utf-8"></script>
+    <script src="./script/register.js" charset="utf-8"></script>
+</body>
+</html>

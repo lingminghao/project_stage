@@ -1,0 +1,224 @@
+.warp{
+    .header{
+        width: 100%;
+        background-color: #F6F6F6;
+    }
+
+    .reg_top{
+        width: 100%;
+    .top{
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        img{
+            float: left;
+            margin-right: 20px;
+            margin-top: 30px;
+        }
+        p{
+            float: left;
+            width: 100px;
+            text-align: center;
+            border-left: 1px solid #eee;  
+            margin-top: 30px;
+        }
+    }
+    }
+    .post{
+        width: 100%;
+    .account{
+        width: 1200px;
+        margin: 0 auto;
+    .enter{
+        height: 35px;
+        width: 980px;
+        // background-color: red;
+        margin: 20px auto;
+        // display: none;
+        visibility: hidden;
+        .stone{
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAjCAMAAABCdbKKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNGM5MDRkMy02MjM2LTBkNGQtYWM5NS0xNDVjNjdlMjAyYTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEQ0Qzc5ODQ4MTdDMTFFQTk0RjhGNzg2MENGMEU0RDUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEQ0Qzc5ODM4MTdDMTFFQTk0RjhGNzg2MENGMEU0RDUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0ODc3NDIzYS05ZmY2LTRhNTUtODQwYS0zZjFjOGJlYjFiODMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjNzA0OWQ2Ny1iNjhjLWRjNDktYjRhOS0zNGJlZmJhMjJmN2IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6ux9pFAAAAq1BMVEXd3d38AC3+/v7y8vL7+/v9T27s7Oz9Xnr/2eDm5ub8CTTj4+Pg4ODu7u7////f39/09PTw8PD8BjLi4uLe3t7h4eH4+Pj29vb+kqX8Ai//8/X9ZYD/+/z+xtDo6Oj9fJP9dI38AS78/Pz/5+v+qbj/6Oz+vcn9Mlb8Ejz8IUj8HUX8Ez3+v8rl5eX/5er9R2f+0dn9SGj/4eb8H0fk5OT9MVX+1Nz+qLf////oluxYAAAAOXRSTlP//////////////////////////////////////////////////////////////////////////wA6rGVAAAABMklEQVR42uzdB1ICQRRFURRMmDBgxoABE+a0/5VZ/VdBPc5Zw7vVNTChs0C40V/z1WFuGH26pYp6YOqiJsXxaot6a8/WRU2K0zqqu7YualL0r1vUixvGLmpSXNRRvWnsoibF/UmLerxt7aImxVEd1cvWLmpSfJ61qHv75i5qUvzWUX1u7qImxXdFfWDuoibGXVW9Zu+iJsVrRX1o76ImxdVbVb1u8KImxYp7RUVNlt2Puld0aPGiJsVlHdU7Fi9qUjxW1D2LFzVOakTNTF5Tv7imFjV+/UbUzO7/1D/+pxY1Ud7dUSZqsjy791vURJl4SkvUZLnxPLWoifLgzSeiJot3lImaLE/eJipqsnjvt6jJ0r/1hQ5RE8W3tERNFl+9FDVhfJ9a1IQZVdRTU58b/wIMAM3+btWo5FYjAAAAAElFTkSuQmCC") no-repeat;
+            width: 490px;
+            height: 35px;
+            float: left;
+            text-indent: 40px;
+            line-height: 35px;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .sttow{
+            width: 490px;
+            height: 35px;
+            float: left;
+            text-indent: 40px;
+            line-height: 35px;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #DDDDDD;
+        }
+    }
+    form{
+      width: 980px;
+      height: 480px;
+    //   border: 1px solid #999;
+      margin: 0 auto;
+      .account-con{
+        .account-name{
+            overflow: hidden;
+            margin-top: 30px;
+            p{
+              width: 100px;  
+              float: left;
+              height: 38px;
+              line-height: 38px;
+              text-align: center;
+            }
+            span{
+                float: left; 
+                width: 111px;
+                height: 38px;
+                text-align: center;
+                line-height: 38px;
+                cursor: pointer;
+              }
+            .hidden{
+                background-color: red;
+                color: white;
+            }
+            }
+          
+        .account-phone{
+            margin-top: 30px;
+            overflow: hidden;
+            p{
+                float: left;
+                height: 36px;
+                line-height: 36px;
+                width: 100px;
+                text-align: center;
+            }
+            input{
+                float: left;
+                width: 548px;
+                height: 36px;
+                line-height: 36px;
+                color: #666;
+                font-size: 14px;
+                text-indent: 20px;
+                border: 1px solid #ddd;
+                border-radius: 2px;
+                padding: 0;
+                cursor: pointer;
+                outline: 1px solid #ddd;
+            }
+            .reginfo{
+                margin-left: 10px;
+                width: 200px;
+                text-align: left;
+                display: none;
+                span{
+                    display: inline-block;
+                    margin-right: 10px;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+            }
+        }
+        .account-note{
+            margin-top: 30px;
+            overflow: hidden;
+            p{
+                float: left;
+                height: 36px;
+                line-height: 36px;
+                width: 100px;
+                text-align: center;
+            }
+            input{
+                float: left;
+                width: 350px;
+                height: 36px;
+                line-height: 36px;
+                color: #666;
+                font-size: 14px;
+                text-indent: 20px;
+                border: 1px solid #ddd;
+                border-radius: 2px;
+                padding: 0;
+                cursor: pointer;
+                outline: 1px solid #ddd;
+            }
+            .notebut{
+                display: inline-block;
+                width: 190px;
+                height: 38px;
+                line-height: 38px;
+                background-color: #fc002d;
+                border-radius: 2px;
+                color: #fff;
+                font-size: 14px;
+                padding: 0;
+                border: 0;
+                margin-left: 10px;
+                cursor: pointer;
+                text-align: center;
+            }
+            .reginfo{
+                margin-left: 10px;
+                width: 200px;
+                float: right;
+                text-align: left;
+                margin-right: 113px;
+                display: none;
+                span{
+                    display: inline-block;
+                    text-align: center;
+                    margin-right: 10px;
+                    width: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .commit{
+            width: 550px;
+            height: 38px;
+            background-color: #ddd;
+            border-radius: 2px;
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+            line-height: 38px;
+            margin-top: 40px;
+            margin-left: 95px;
+            cursor: pointer;
+        }
+        .commit:active{
+            background-color: red;
+            color: white;
+        }
+        .have{
+            text-align: right;
+            height: 50px;
+            line-height: 50px;
+            margin-right: 340px;
+        }
+        }
+      }    
+    }
+}
+    .foot{
+        width: 100%;
+        background-color: #302E2E;
+    }
+}

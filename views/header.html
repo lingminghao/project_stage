@@ -1,0 +1,86 @@
+<style>
+    .common_sitenav {
+        width: 1200px;
+        margin: 0 auto;
+        background-color: #F6F6F6;
+    }
+
+    .site_nav {
+        overflow: hidden;
+    }
+
+    .site_nav_link {
+        float: left;
+    }
+
+    .site_nav ul li {
+        float: left;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .site_nav ul li a {
+        float: left;
+        color: #474747;
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .site_nav ul li span {
+        background: #d3ccd3;
+        height: 10px;
+        width: 1px;
+        margin: 0px 10px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .site_nav ul li:hover a {
+        color: red;
+    }
+
+    .site_nav_login {
+        float: right;
+    }
+    .headimg{
+        background: #F6F6F6 !important;
+        height: 10px;
+        width: 1px;
+        margin: 0px 10px;
+        display: inline-block;
+        cursor: pointer; 
+    }
+</style>
+<link rel="stylesheet" href="../style/iconfont.css">
+<div class="common_sitenav">
+    <div class="site_nav">
+        <div class="site_nav_link">
+            <ul>
+                <li><a href="#">中关村在线</a><span></span></li>
+                <li><a href="#">ZOL企业购</a><span></span></li>
+                <li><a href="#">解决方案馆</a><span></span></li>
+                <li><a href="#">中在指数</a><span></span></li>
+                <li><a href="#">供应商入驻</a></li>
+            </ul>
+        </div>
+        <div class="site_nav_login">
+            <ul>
+                <li><a href="login.html" class="haslogin">登录</a><span class="headimg "></span></li>
+                <li><a href="register.html">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="./script/utils.js" charset="utf-8"></script>
+<script src="./script/iconfont.js"></script>
+<script>
+  (function(){
+  // 判断是否已登录
+  console.log($('.site_nav_login ul .haslogin').text());
+  if (getCookie('login')) {
+    $('.site_nav_login ul .haslogin').css('display','none')
+    $('.site_nav_login ul li .headimg').addClass('iconfont icon-touxiang')
+  }
+})();
+</script>
