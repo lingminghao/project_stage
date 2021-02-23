@@ -90,7 +90,7 @@ window.onload =function(){
           <li>
                 <img src="${item.goodimg}" >
                 <a href="particulars.html?getid=${item.goodid}">${item.goodtitle}</a>
-                <p>￥${item.goodprice} <span class="iconfont icon-huaban5 clickone" data-id=${item.goodid}></span></p>
+                <p><em>￥</em><em  class='getprice'>${item.goodprice}</em> <span class="iconfont icon-huaban5 clickone" data-id=${item.goodid}></span></p>
                 <p style="display: none;" class="getid">${item.goodid}</p>
               </li>
           `
@@ -129,15 +129,115 @@ window.onload =function(){
 
   //购物车中商品数量
   var losc = localStorage.getItem('goods')
-  var str =losc.split('}')
-  console.log(str);
-  var somegoods = str.length-1
-  if(str.length-1 <0){
-    $('.mycart .cartnum').html('0')
+  if(localStorage.length){
+    var str =losc.split('}')
+    var somegoods = str.length-1
+    if(str.length-1 <=0){
+      $('.mycart .cartnum').html('0')
+    }else{
+      $('.mycart .cartnum').html(somegoods)
+    }
   }else{
-    $('.mycart .cartnum').html(somegoods)
+    $('.mycart .cartnum').html('0')
   }
   
+  //价格由高到低
+  $('.orderby .orderbyheight').on('click',function(){
+    $.ajax({
+      url:'./data/productlist.json',
+      type:'get',
+      dataType: 'json',
+      cache: false,
+      success:function(json){
+        // console.log(json[0].goodprice)
+        var domStr = ''
+        var arr =[]
+          for(var j = 0;j<json.length;j++){
+            for(var i = 0;i<json.length-1-j;i++){
+            if(json[i].goodprice<json[i+1].goodprice){
+              var tem = json[i]
+              json[i] = json[i+1]
+              json[i+1] = tem
+            }
+            
+          }
+          }
+        
+        $.each(json,function (index,item){
+          
+         
+          domStr += `
+          <li>
+                <img src="${item.goodimg}" >
+                <a href="particulars.html?getid=${item.goodid}">${item.goodtitle}</a>
+                <p class='getprice'>￥${item.goodprice} <span class="iconfont icon-huaban5 clickone" data-id=${item.goodid}></span></p>
+                <p style="display: none;" class="getid">${item.goodid}</p>
+              </li>
+          `
+      })
+      $('.goodlist ul').html(domStr)
+    }
+    })
+  })
+  //价格由低到高
+  $('.orderby .orderbylow').on('click',function(){
+    $.ajax({
+      url:'./data/productlist.json',
+      type:'get',
+      dataType: 'json',
+      cache: false,
+      success:function(json){
+        // console.log(json[0].goodprice)
+        var domStr = ''
+          for(var j = 0;j<json.length;j++){
+            for(var i = 0;i<json.length-1-j;i++){
+            if(json[i].goodprice>json[i+1].goodprice){
+              var tem = json[i]
+              json[i] = json[i+1]
+              json[i+1] = tem
+            }
+            
+          }
+          }
+        
+        $.each(json,function (index,item){
+          domStr += `
+          <li>
+                <img src="${item.goodimg}" >
+                <a href="particulars.html?getid=${item.goodid}">${item.goodtitle}</a>
+                <p class='getprice'>￥${item.goodprice} <span class="iconfont icon-huaban5 clickone" data-id=${item.goodid}></span></p>
+                <p style="display: none;" class="getid">${item.goodid}</p>
+              </li>
+          `
+      })
+      $('.goodlist ul').html(domStr)
+    }
+    })
+  })
+  //默认排序
+  $('.orderby .orderbydef').on('click',function(){
+    $.ajax({
+      url:'./data/productlist.json',
+      type:'get',
+      dataType: 'json',
+      cache: false,
+      success:function(json){
+        // console.log(json[0].goodprice)
+        var domStr = ''       
+        $.each(json,function (index,item){
+          domStr += `
+          <li>
+                <img src="${item.goodimg}" >
+                <a href="particulars.html?getid=${item.goodid}">${item.goodtitle}</a>
+                <p class='getprice'>￥${item.goodprice} <span class="iconfont icon-huaban5 clickone" data-id=${item.goodid}></span></p>
+                <p style="display: none;" class="getid">${item.goodid}</p>
+              </li>
+          `
+      })
+      $('.goodlist ul').html(domStr)
+    }
+    })
+  })
 }
 
 

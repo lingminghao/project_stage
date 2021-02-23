@@ -148,13 +148,14 @@ window.onload = function(){
   }) 
   
   var losc = localStorage.getItem('goods')
-  var str =losc.split('}')
-  console.log(str);
-  var somegoods = str.length-1
-  if(!str.length-1 <=-1){
-
-    
-    $('.mycart .cartnum').html(somegoods)
+  if(localStorage.length){
+    var str =losc.split('}')
+    var somegoods = str.length-1
+    if(str.length-1 <=0){
+      $('.mycart .cartnum').html('0')
+    }else{
+      $('.mycart .cartnum').html(somegoods)
+    }
   }else{
     $('.mycart .cartnum').html('0')
   }

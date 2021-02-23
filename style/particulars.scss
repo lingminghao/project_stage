@@ -232,6 +232,8 @@
       margin: 0 auto;
       .hosurl{
         width: 100%;
+        height: 50px;
+        line-height: 70px;
         color: #d3ccd3;
         a{
           color: #d3ccd3;
@@ -243,10 +245,10 @@
           float: left;
           .goodimgs{
             width: 450px;
-            height: 450px;
+            height: 400px;
             img{
               width: 450px;
-              height: 450px;
+              height: 400px;
             }
           }
         }
@@ -257,13 +259,24 @@
             float: left;
             width: 60px;
             height: 60px;
-            background-color: red;
-            margin-left: 5px;
+            margin: 0 16px;
             img{
               width: 60px;
               height: 60px;
             }
           }
+          // :first-child{
+          //   line-height: 60px;
+          //   text-align: center;
+          //   font-size: 60px;
+          //   cursor: pointer;
+          // }
+          // :last-child{
+          //   line-height: 60px;
+          //   text-align: center;
+          //   font-size: 60px;
+          //   cursor: pointer;
+          // }
         }
       }
       .goodright{
@@ -314,6 +327,7 @@
             border: 1px solid black;
             text-align: center;
             margin: 20px 5px;
+            cursor: pointer;
             
           }
           :first-child{
@@ -326,16 +340,16 @@
       }
       .addcart{
         width: 150px;
-    height: 44px;
-    line-height: 44px;
-    cursor: pointer;
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-    background: -webkit-gradient(linear,left top,right top,from(#fc4164),to(#fc002d));
-    border-radius: 2px;
-    margin-left: 79px;
-    margin-top: 30px;
+        height: 44px;
+        line-height: 44px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        background: -webkit-gradient(linear,left top,right top,from(#fc4164),to(#fc002d));
+        border-radius: 2px;
+        margin-left: 79px;
+        margin-top: 30px;
       }
     }
 
@@ -344,9 +358,8 @@
       margin-top: 50px;
       .hotgood{
         width: 230px;
-        height: 500px;
         float: left;
-        background-color: red;
+        margin-bottom: 40px;
         .hottit{
           height: 36px;
           color: #333;
@@ -356,24 +369,72 @@
           text-indent: 12px;
           border-bottom: 1px solid #f0f0f0;
         }
+        .hotjosn{
+          border: 1px solid #f0f0f0;
+          li{
+
+          margin-bottom: 10px;
+          img{
+            width: 200px;
+            height: 200px;
+            margin: 5px 10px;
+          }
+          .hotname{
+          width: 100%;
+          text-align: center;  
+          max-height: 32px;
+          font-size: 12px;
+          line-height: 16px;
+          margin-top: 8px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          }
+          .hotname:hover{
+            color: red;
+          }
+          .hotprice{
+            width: 100%;
+            text-align: center;
+            margin-top: 3px;
+            height: 22px;
+            line-height: 22px;
+            font-size: 14px;
+            color: #fc002d;
+          }
+        }
+        }
       }
       .goodint{
         width: 958px;
         float: left;
         margin-left: 10px;
         .int{
-          height: 36px;
-          color: #333;
-          font-size: 12px;
-          background-color: #f8f8f8;
-          line-height: 36px;
-          text-indent: 12px;
+            width: 140px;
+            height: 100%;
+            text-align: center;
+            line-height: 38px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: red;
+
+        }
+        .basic{
+          width: 100%;
+          height: 31px;
+          line-height: 31px;
           border-bottom: 1px solid #f0f0f0;
+          background: #f8f8f8;
+          text-indent: 29px;
+          font-size: 12px;
+          font-weight: 700;
+          border-top: 1px solid red;
         }
         .settings{
-          
+          margin-bottom: 40px;
             li:last-child{
-              border-bottom: 1px solid black;   
+              border-bottom: 1px solid #f0f0f0;   
             }
           li{
             overflow: hidden;
@@ -385,14 +446,14 @@
             }
             .name{
               width: 190px;     
-              border-top: 1px solid black;  
-              border-left: 1px solid black;   
-              border-right: 1px solid black;     
+              border-top: 1px solid #f0f0f0;  
+              border-left: 1px solid #f0f0f0;   
+              border-right: 1px solid #f0f0f0;     
             }
             .set{
               width: 760px;
-              border-top: 1px solid black;  
-              border-right: 1px solid black;  
+              border-top: 1px solid #f0f0f0;  
+              border-right: 1px solid #f0f0f0;  
             }
           }
         }

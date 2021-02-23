@@ -272,7 +272,7 @@
   }
 
 .goodinfo{
-  
+  min-height: 400px;
   .info{
     overflow: hidden;
     margin-top: 20px;
@@ -290,7 +290,7 @@
       margin-left: 10px;
     }
     :nth-child(3){
-      margin-left: 210px;
+      margin-left: 100px;
     }
     :nth-child(4){
       margin-left: 170px;
@@ -300,6 +300,7 @@
         border: 1px solid black;
         text-align: center;
         margin-right: 10px;
+        cursor: pointer;
     }
     :nth-child(5){
         width: 20px;
@@ -313,12 +314,15 @@
         border: 1px solid black;
         text-align: center;
         margin-left: 10px;
+        cursor: pointer;
     }
     :nth-child(7){
      margin-left: 170px;
+     width: 80px;
     }
     :nth-child(8){
-      margin-left: 180px;
+      margin-left: 160px;
+      cursor: pointer;
      }
   }
 }
@@ -331,6 +335,7 @@
   }
   .clearall{
     float: left;
+    cursor: pointer;
   } 
   .goprice{
     float: right;
@@ -349,6 +354,7 @@
     line-height: 64px;
     font-size: 18px;
     color: #fff;
+    cursor: pointer;
     }
   }
 }
