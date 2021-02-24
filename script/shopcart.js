@@ -89,7 +89,7 @@ window.onload = function(){
     if(add>=10){
       $(this).prev().html(10)
     }
-    var sum = parseInt($('.goodprice').text())*parseInt($(this).prev().html())
+    var sum = parseInt($(this).prev().prev().prev().text())*parseInt($(this).prev().html())
     $(this).next().html(sum);
     var allprice = 0
     var listp = $('.info .addnum').next()
@@ -106,7 +106,7 @@ window.onload = function(){
     if(sub<1){
       $(this).next().html(1)
     }
-    var sum = parseInt($('.goodprice').text())*parseInt($(this).next().html())
+    var sum = parseInt($(this).prev().text())*parseInt($(this).next().html())
      $(this).next().next().next().html(sum);
 
      var allprice = 0
